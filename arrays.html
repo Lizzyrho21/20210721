@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays practice</title>
+</head>
+<body>
+    <h1>Hello Arrays!</h1>
+    <script>
+        // Basic array
+        let nameList = ['Kevin', 'Bob', 'Albert','Troy', 'Alfred', 'Kit'];
+        // print it out
+        console.log(nameList);
+
+        // Print the 2nd name in my array
+        console.log('The 2nd name in the list is ' + nameList[1]);
+
+        // Combine with loops to process the array!
+
+        // For loop - We know how many times we want it to loop
+
+
+     //   for (let i =  0; i < 4; i++)  // our starting counter 2. To decide when it is finished 3. iteration
+        {
+            // Print the next element from the array
+     //       console.log(nameList[i]);  // <---We use or variable !
+        }
+
+                
+        //for (let i =  0; i < nameList.length; i++) <--- In case you dont know how many are in a list!!
+
+
+        
+        //While loop - We don't know how many times we want it to loop 
+        let names = []; // start with an empty array!!
+        // Adds names to a list
+        let notDoneEnteringNames = true;
+        while(notDoneEnteringNames)
+        {
+            // enter a name
+            let newNameEntered = prompt("Please enter another name or X to quit..");
+            if (newNameEntered === "X")
+            {
+                notDoneEnteringNames = false;
+            }
+            else {
+                names.push(newNameEntered); // add a new name to the array
+
+            }
+            console.log(newNameEntered);
+
+
+        }
+  // Print them all out
+  for (let i =  0; i < names.length; i++)  //.length is for when we dont know how many names are entered!
+        {
+            // Print the next element from the array
+            console.log(nameList[i]);  // <---We use or variable !
+        }
+
+
+
+
+        // Do-While loop
+
+    </script>
+</body>
+</html>
